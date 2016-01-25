@@ -1,0 +1,106 @@
+.table{
+	display: table;
+	border-collapse: collapse;
+	line-height: 1.5;
+	text-align: center;
+	background: #fff;
+	cursor: default;	
+	border-top: 1px solid #aaa;
+}
+.table-head{
+	position: relative;
+	display: table-header-group;
+}
+.table-head .table-td{
+	padding: 0.5em;
+	border: 1px;
+}
+.table-head .th_gotop{
+	cursor: pointer;
+	color: #337ab7;
+}
+
+.table-body{
+	display: table-row-group;
+	border-top: 1px solid #aaa;
+	font-size: 13px;
+}
+.table-row{
+	display: table-row;
+	transition: border-color 0.2s;
+	border-bottom: 1px solid #f3f0f6;
+}
+.table-row:nth-child(2n+1) {
+	background: #fff8fa;
+	border-bottom: 1px solid #f3f0f6;
+}
+.table-row:nth-child(2n) {
+	background: #fffdfc;
+	border-bottom: 1px solid #f3f0f6;
+}
+.table-row:hover{
+	background: #f4f4f4
+}
+.table-td{
+	display: table-cell;
+	padding: 4px;
+	vertical-align: middle;
+	transition: color 0.2s;
+}
+.table-td.SS {
+  color: #E81;
+}
+.table-td.S {
+  color: #FA2;
+}
+.table-td.A {
+  color: #F0A;
+}
+.table-td.B {
+  color: #A66;
+}
+.table-td.C {
+  color: #38F;
+}
+.table-td.negative{
+	color: #eee;
+}
+.table-td.name .button {
+  border: 0.1em solid #ccc;
+  padding: 0.5em;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #fafafa;
+  border-radius: 0.2em;
+}
+.table-td.name.own .button{
+  background-color: #bfb;
+}
+
+[tooltip]:before {
+	content : '★';
+}
+.deps [tooltip]:before {
+	content : '☆';
+}
+[tooltip]:after {
+  margin-left: 5px;
+  position : absolute;
+  content : attr(tooltip);
+  display : none;
+  z-index: 255;
+  white-space: pre;
+  text-align: left;
+  background-color: #bfb;
+}
+[tooltip]:hover:after {
+  display : inline-block;
+  padding: 10px;
+}
+.table-td.deps [tooltip]:after {
+  background-color: #ddf;
+}

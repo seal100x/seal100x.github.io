@@ -1,0 +1,7 @@
+#imgModel{
+	background-image: url("");    
+	height: 150px;
+    width: 100px;
+    background-position-x: -5px;
+    background-position-y: -50px;
+}
